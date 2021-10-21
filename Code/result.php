@@ -32,5 +32,6 @@ oke<br>
     //display it 
     echo $json;
     //generate json file
-    file_put_contents($_GET['filename'].".trealet", $json);
+    echo __DIR__;
+    file_put_contents(__DIR__."\Trealet\\".$_GET['filename'].".trealet", $json);
 ?>
