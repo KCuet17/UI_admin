@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="myfile.json"></script>
+    <title>Document</title>
+    <style>
+        .margin {
+            margin-left: 10px;
+        }
+    </style>
+    <script src="../jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <br><br>
+    <script>
+        let obj = JSON.parse(myfile);
+        document.getElementById("demo").innerHTML = obj.trealet[0].time;   
+    </script>
+
+    <div>
+        <h1>Các mục đã có:</h1>
+        <p id="demo"></p>
+    </div>
+
+    <div>
+
+        <h1>Thêm mục thời gian mới:</h1>
+        <form action="result.php">
+
+            <label for="time">Thời gian:</label><br>
+            <input type="text" id="time" name="time" placeholder= ""><br><br>
+
+            <label for="title">Tiêu đề:</label><br>
+            <input type="text" id="title" name="title"><br><br>
+
+            <label for="description">Thông tin chi tiết:</label><br>
+            <input type="text" id="description" name="description"><br><br>
+
+            <label for="backgroundImg">ID ảnh minh họa:</label><br>
+            <input type="text" id="backgroundImg" name="backgroundImg"><br><br>
+
+            <label for="type">Loại item:</label>
+            <select name="type" id="type">
+                <option value="img">Ảnh</option>
+                <option value="video">Video</option>
+            </select><br><br>
+
+            <label for="link">Link/ID item:</label><br>
+            <input type="text" id="link" name="link"><br><br>
+
+            <input type="submit" value="Submit"><br>
+
+        </form>
+    </div>
+
+
+</body>
+</html>
