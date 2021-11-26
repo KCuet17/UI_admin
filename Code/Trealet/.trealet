@@ -1,10 +1,16 @@
 {
     "trealet": {
-        "time": "",
         "title": "",
+        "author": "",
         "description": "",
-        "type": "img",
-        "link": "",
-        "backgroundImg": ""
+        "items": {
+            "item0": {
+                "id": "",
+                "title": "",
+                "description": "",
+                "type": "",
+                "date": ""
+            }
+        }
     }
 }
