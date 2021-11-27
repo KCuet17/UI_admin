@@ -20,6 +20,11 @@
 
 <body>
 
+    <?php
+        $string = file_get_contents("trealet_sample.trealet");
+        $obj = json_decode($string);
+    ?>
+
     <div>
         <h1>Bảo tàng lịch sử học Việt Nam </h1>
         <h2>Chào mừng đến với trang admin</h2>
@@ -30,34 +35,34 @@
             <h3>Thông tin của bảo tàng:</h3>
 
             <label for="filename">Tên file lưu trữ:</label><br>
-            <input type="text" id="filename" name="filename" placeholder=".trealet"><br><br>
+            <input type="text" id="filename" name="filename" placeholder="trealet_sample.trealet"><br><br>
 
             <label for="name">Tên bảo tàng:</label><br>
-            <input type="text" id="name" name="name"><br><br>
+            <input type="text" id="name" name="name" placeholder="<?= $obj->trealet->footer->name ?>"><br><br>
 
             <label for="title">Tiêu đề trang:</label><br>
-            <input type="text" id="title" name="title"><br><br>
+            <input type="text" id="title" name="title" placeholder="<?= $obj->trealet->title ?>"><br><br>
 
             <label for="des">Thông tin mô tả trang:</label><br>
-            <input type="text" id="des" name="des"><br><br>
+            <input type="text" id="des" name="des" placeholder="<?= $obj->trealet->description ?>"><br><br>
 
             <label for="lisence">Giấy phép:</label><br>
-            <input type="text" id="lisence" name="lisence"><br><br>
+            <input type="text" id="lisence" name="lisence" placeholder="<?= $obj->trealet->footer->lisence ?>"><br><br>
 
             <label for="lisencedate">Ngày cấp giấy phép:</label><br>
-            <input type="text" id="lisencedate" name="lisencedate"><br><br>
+            <input type="text" id="lisencedate" name="lisencedate" placeholder="<?= $obj->trealet->footer->lisencedate ?>"><br><br>
 
             <label for="address">Địa chỉ:</label><br>
-            <input type="text" id="address" name="address"><br><br>
+            <input type="text" id="address" name="address" placeholder="<?= $obj->trealet->footer->address ?>"><br><br>
 
             <label for="mail">Email:</label><br>
-            <input type="text" id="mail" name="mail"><br><br>
+            <input type="text" id="mail" name="mail" placeholder="<?= $obj->trealet->footer->mail ?>"><br><br>
 
             <label for="phone">Số điện thoại liên hệ:</label><br>
-            <input type="text" id="phone" name="phone"><br><br>
+            <input type="text" id="phone" name="phone" placeholder="<?= $obj->trealet->footer->phone ?>"><br><br>
 
             <label for="timeopen">Giờ mở cửa:</label><br>
-            <input type="text" id="timeopen" name="timeopen"><br><br>
+            <input type="text" id="timeopen" name="timeopen" placeholder="<?= $obj->trealet->footer->timeopen ?>"><br><br>
 
             <input type="submit" value="Chỉnh sửa"><br>
     </div>
@@ -106,7 +111,6 @@
     </div>
 
 
-
 </body>
 
 </html>
@@ -136,8 +140,6 @@
             "<button type='button' class='rmbtn'>Remove this item</button><br><br> " +
 
             "</div>";
-
-
 
         // nextHtml.attr('id', 'item' + rowNum);
         var hasRmBtn = $('.rmbtn', nextHtml).length > 0;
@@ -174,8 +176,6 @@
 
             "</div>";
 
-
-
         // nextHtml.attr('id', 'item' + rowNum);
         var hasRmBtn = $('.rmbtn', nextHtml).length > 0;
         //   if (!hasRmBtn) {
@@ -184,13 +184,6 @@
         //   }
         $item.after(nextHtml);
     });
-
-
-
-
-
-
-
 
     $("body").on("click", ".rmbtn", function() {
         $(this).parents('.item').remove();

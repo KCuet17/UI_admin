@@ -4,51 +4,45 @@
         "description": "dsasd",
 
         "footer":{
-            "name":"",
-            "lisence":"",
-            "lisencedate":"",
-            "address":"",
-            "mail":"",
-            "phone":"",
-            "timeopen":"sdasdasd",
+            "name":"heahb",
+            "lisence":"ehde",
+            "lisencedate":"hdhd",
+            "address":"ábfdr",
+            "mail":"zdxfbb",
+            "phone":"hffhtst",
+            "timeopen":"sdasdasd"
         },
-
 
         "models":{
             "model1":{
-                "title": "dè",
+                "title": "dedd",
                 "author": "ghi",
                 "description": "klm",
                 "time": "1945",
                 "items": {
-
                     "item0": {
-                        "id": "12",
+                        "id": "12"
                     },
                     "item1": {
-                        "id": "12554",
+                        "id": "12554"
                     }
 
                 }
             },
             "model2":{
-                "title": "dè",
+                "title": "hdhd",
                 "author": "ghi",
                 "description": "klm",
                 "time": "1945",
                 "items": {
-
                     "item0": {
-                        "id": "12",
+                        "id": "12"
                     },
                     "item1": {
-                        "id": "12554",
+                        "id": "12554"
                     }
-
                 }
             }
         }
-        
-
     }
 }
