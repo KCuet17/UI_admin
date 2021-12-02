@@ -90,9 +90,7 @@
 <script>
     /////////////////////////// model
     var modelNum = 1;
-
     $("body").on("click", ".addmoremodel", function() {
-        modelNum++;
         var $item = $(this).next().children().last();
 
         var nextHtml ="<div class='model' id='model"+modelNum+"'>"+

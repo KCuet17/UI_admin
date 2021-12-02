@@ -1,48 +1,33 @@
 {
     "trealet": {
-        "title": "asdasdasd",
-        "description": "dsasd",
-
-        "footer":{
-            "name":"heahb",
-            "lisence":"ehde",
-            "lisencedate":"hdhd",
-            "address":"ábfdr",
-            "mail":"zdxfbb",
-            "phone":"hffhtst",
-            "timeopen":"sdasdasd"
-        },
-
-        "models":{
-            "model1":{
-                "title": "dedd",
-                "author": "ghi",
-                "description": "klm",
-                "time": "1945",
-                "items": {
-                    "item0": {
-                        "id": "12"
-                    },
-                    "item1": {
-                        "id": "12554"
-                    }
-
-                }
+        "name": "Bảo tàng lịch sử Việt Nam",
+        "title": "Bác Hồ với quê hương Nam Đàn",
+        "description": "Quê hương Nam Đàn nằm ở hạ lưu Sông Lam của xứ Nghệ, là nơi Chủ tịch Hồ Chí Minh sinh ra và sống những năm tháng tuổi thơ êm đềm với những ước mơ cao đẹp",
+        "models": [
+            {
+                "modeltitle": "thi sinh so 1",
+                "modeldes": "dhcn",
+                "modeltime": "20\/11",
+                "backgroundImg": "1",
+                "itemtype": "img",
+                "id": "1.1 1.2 1.3"
             },
-            "model2":{
-                "title": "hdhd",
-                "author": "ghi",
-                "description": "klm",
-                "time": "1945",
-                "items": {
-                    "item0": {
-                        "id": "12"
-                    },
-                    "item1": {
-                        "id": "12554"
-                    }
-                }
+            {
+                "modeltitle": "thi sinh so 2",
+                "modeldes": "dhnn",
+                "modeltime": "21\/11",
+                "backgroundImg": "2",
+                "itemtype": "video",
+                "id": "2.1 2.2 2.3"
+            },
+            {
+                "modeltitle": "thi sinh so 3",
+                "modeldes": "dhkt",
+                "modeltime": "22\/11",
+                "backgroundImg": "3",
+                "itemtype": "img",
+                "id": "3.1 3.2 3.3"
             }
-        }
+        ]
     }
 }
