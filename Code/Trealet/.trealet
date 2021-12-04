@@ -1,15 +1,17 @@
 {
     "trealet": {
         "title": "",
-        "author": "",
+        "author": null,
         "description": "",
         "items": {
             "item0": {
-                "id": "",
-                "title": "",
-                "description": "",
-                "type": "",
-                "date": ""
+                "id": [
+                    ""
+                ],
+                "title": null,
+                "description": null,
+                "type": null,
+                "date": null
             }
         }
     }
