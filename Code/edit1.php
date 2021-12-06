@@ -1,5 +1,5 @@
 <?php
-$string = file_get_contents("trealet_sample.trealet");
+$string = file_get_contents("trealet.json");
 $obj = json_decode($string);
 
 $name = $_GET['name'];
@@ -13,7 +13,7 @@ $obj->trealet->title=$title;
 $obj->trealet->description=$description;
 
 $json = json_encode($obj,JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);
-file_put_contents("trealet_sample.trealet", $json);
+file_put_contents("trealet.json", $json);
 
 // các xử lí
 // Tiến hành chuyển hướng
